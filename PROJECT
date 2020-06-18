@@ -1,0 +1,7 @@
+domain: hello.operator.com
+repo: github.com/AlexsJones/hello-operator
+resources:
+- group: webapp
+  kind: Emitter
+  version: v1
+version: "2"

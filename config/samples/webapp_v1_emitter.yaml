@@ -1,0 +1,7 @@
+apiVersion: webapp.hello.operator.com/v1
+kind: Emitter
+metadata:
+  name: emitter-sample
+spec:
+  # Add fields here
+  pairName: "sample-set"

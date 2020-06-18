@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emitter-deployment
+  labels:
+    app: emitter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: emitter
+  template:
+    metadata:
+      labels:
+        app: emitter
+    spec:
+      containers:
+        - name: emitter
+          image: tibbar/hello-go:latest
+          ports:
+            - containerPort: 9090

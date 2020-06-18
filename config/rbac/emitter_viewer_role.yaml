@@ -1,0 +1,20 @@
+# permissions for end users to view emitters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: emitter-viewer-role
+rules:
+- apiGroups:
+  - webapp.hello.operator.com
+  resources:
+  - emitters
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - webapp.hello.operator.com
+  resources:
+  - emitters/status
+  verbs:
+  - get

@@ -9,7 +9,7 @@ To create this deployment run `kubectl apply -f ./config/samples` which will cre
 All the real logic is in `./controllers/emitter_controller.go`
 
 
-<img src="image/layout.png" width="800" />
+<img src="images/layout.png" width="800" />
 
 
 
